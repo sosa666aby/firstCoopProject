@@ -89,6 +89,12 @@ body {
     font-weight: 500;
     border: none;
     cursor: pointer;
+    transition: .1s;
+}
+.button:hover{
+    background: white;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;
 }
 
 .form {
@@ -132,6 +138,11 @@ body {
     border-radius: 18px;
     font-size: 20px;
     color: #2e2e2e;
+    transition: .1s;
+}
+.registration-link:hover{
+    background: #2e2e2e;
+    color: white;
 }
 
 .top {
@@ -168,7 +179,15 @@ body {
 .top__heading-button {
     font-weight: 500;
     line-height: 52.02px;
+    transition: .2s;
 }
+
+.top__heading-button:hover{
+    background: white;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+}
+
 
 .ringForText,
 .ringLeft,
@@ -246,6 +265,8 @@ body {
     padding: 12px 88px;
     cursor: pointer;
 }
+
+
 
 .registration-authorization__item-link {
     font-weight: 500;
