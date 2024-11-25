@@ -86,6 +86,14 @@ body {
     border-radius: 18px;
     color: #fff;
 }
+.top__heading-button.button{
+    transition: .5s;
+}
+.top__heading-button.button:hover{
+    background: white;
+    border: 1px solid #2e2e2e;
+    color: #2e2e2e;
+}
 
 .header {
     position: fixed;
@@ -112,6 +120,12 @@ body {
     border-radius: 18px;
     font-size: 20px;
     color: #2e2e2e;
+    transition: .5s;
+}
+
+.authorization:hover{
+background: #2e2e2e;
+    color: white;
 }
 
 .top {
@@ -145,6 +159,10 @@ body {
     padding: 12px 0;
 }
 
+.top__heading-bottom:hover{
+    color: white;
+}
+
 .top__heading-button {
     font-weight: 500;
     line-height: 52.02px;
@@ -160,12 +178,14 @@ body {
     left: -69px;
     bottom: 0px;
     overflow: hidden;
-    background: url(../images/ringLeft.svg);
+    background: url(../../images/ringLeft.svg);
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     width: 428px;
     height: 320px;
     background-position: center center;
+    pointer-events: none;
+    user-select: none;
 }
 
 .ringForText {
