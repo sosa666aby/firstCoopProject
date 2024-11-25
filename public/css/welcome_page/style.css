@@ -87,7 +87,7 @@ body {
     color: #fff;
 }
 .top__heading-button.button{
-    transition: .5s;
+    transition: .1s;
 }
 .top__heading-button.button:hover{
     background: white;
@@ -120,7 +120,7 @@ body {
     border-radius: 18px;
     font-size: 20px;
     color: #2e2e2e;
-    transition: .5s;
+    transition: .1s;
 }
 
 .authorization:hover{
