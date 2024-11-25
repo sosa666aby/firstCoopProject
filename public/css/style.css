@@ -69,6 +69,7 @@ body {
     font-weight: 700;
     font-size: 76px;
     line-height: 93px;
+    max-width: 550px;
 }
 
 .wrapper {
@@ -85,14 +86,25 @@ body {
     background: #2e2e2e;
     border-radius: 18px;
     color: #fff;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
-.top__heading-button.button{
-    transition: .1s;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
-.top__heading-button.button:hover{
-    background: white;
-    border: 1px solid #2e2e2e;
-    color: #2e2e2e;
+
+.input-box input{
+    padding: 14px 0 8px 35px;
+    width: 100%;
+    border-radius: 44px;
+    border: 1px solid;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 41px;
 }
 
 .header {
@@ -114,18 +126,12 @@ body {
     color: #2e2e2e;
 }
 
-.authorization {
+.registration-link {
     padding: 5px 12px;
     border: 1px solid #3f3f3f;
     border-radius: 18px;
     font-size: 20px;
     color: #2e2e2e;
-    transition: .1s;
-}
-
-.authorization:hover{
-background: #2e2e2e;
-    color: white;
 }
 
 .top {
@@ -144,23 +150,19 @@ background: #2e2e2e;
     gap: 30px;
 }
 
-.top__heading-title {
-    max-width: 550px;
-}
+/* .top__heading-title {
+  max-width: 550px;
+} */
 
 .top__heading-text {
     font-weight: 500;
     font-size: 27px;
     max-width: 680px;
-    line-height: 46px;
+    line-height: 41px;
 }
 
 .top__heading-bottom {
     padding: 12px 0;
-}
-
-.top__heading-bottom:hover{
-    color: white;
 }
 
 .top__heading-button {
@@ -178,14 +180,12 @@ background: #2e2e2e;
     left: -69px;
     bottom: 0px;
     overflow: hidden;
-    background: url(../../images/ringLeft.svg);
+    background: url(../images/ringLeft.svg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     width: 428px;
     height: 320px;
     background-position: center center;
-    pointer-events: none;
-    user-select: none;
 }
 
 .ringForText {
@@ -204,10 +204,10 @@ background: #2e2e2e;
     right: 355px;
     top: 523px;
     transform: rotate(31deg);
-    font-size: 96px;
+    font-size: 3px;
     color: #fff;
-    -webkit-text-stroke: 1px #2E2E2E;
-    line-height: 140px;
+    -webkit-text-stroke:1px #2E2E2E;
+
 }
 
 .bottom {
@@ -227,6 +227,8 @@ background: #2e2e2e;
     color: #7B7B7B;
 }
 
+/* registration */
+
 .registration__inner {
     padding: 25px 45px 75px;
     display: flex;
@@ -234,46 +236,25 @@ background: #2e2e2e;
     gap: 30px;
 }
 
-.registration__form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.registration__input-box input{
-    padding: 14px 0 8px 35px;
-    width: 100%;
-    border-radius: 44px;
-    border: 1px solid;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 41px;
-}
-
-input[type='password'] {
-    font-family: Verdana;
-    letter-spacing: 0.125em;
-}
-
-.registration__item + .registration__item{
+.registration-authorization__item + .registration-authorization__item{
     padding: 17px 0 2px;
 }
 
-.registration__button {
+.registration-authorization__button {
     border: none;
     color: #E8E8E8;
     padding: 12px 88px;
     cursor: pointer;
 }
 
-.registration__item-link {
+.registration-authorization__item-link {
     font-weight: 500;
     font-size: 27px;
     color: #2E2E2ECC;
     border-bottom: 2px solid #2E2E2ECC;
 }
-/*auth*/
 
+/* authorization */
 .authorization__inner {
     padding: 25px 45px 75px;
     display: flex;
