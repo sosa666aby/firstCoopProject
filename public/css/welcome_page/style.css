@@ -226,3 +226,49 @@ background: #2e2e2e;
     margin: 24px 108px 14px 0;
     color: #7B7B7B;
 }
+
+.registration__inner {
+    padding: 25px 45px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.registration__input-box input{
+    padding: 14px 0 8px 35px;
+    width: 100%;
+    border-radius: 44px;
+    border: 1px solid;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+input[type='password'] {
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+
+.registration__item + .registration__item{
+    padding: 17px 0 2px;
+}
+
+.registration__button {
+    border: none;
+    color: #E8E8E8;
+    padding: 12px 88px;
+    cursor: pointer;
+}
+
+.registration__item-link {
+    font-weight: 500;
+    font-size: 27px;
+    color: #2E2E2ECC;
+    border-bottom: 2px solid #2E2E2ECC;
+}

@@ -45,7 +45,7 @@
                     </p>
                 </div>
                 <div class="top__heading-bottom">
-                    <a class="top__heading-button button" href="">
+                    <a class="top__heading-button button" href="{{route('register')}}">
                         Начать общение
                     </a>
                 </div>
