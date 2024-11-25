@@ -27,7 +27,7 @@
                 <h1 class="registration__title title">
                     Регистрация аккаунта.
                 </h1>
-                <form class="registration__form form" action="">
+                <form class="registration__form form" action="{{route('register.store')}}" method="POST">
                     <div class="registration__input-box input-box">
                         <input
                             class="registration__form-input"
@@ -41,19 +41,19 @@
                     <div class="registration__input-box input-box">
                         <input class="registration__form-input" type="password" placeholder="Пароль."/>
                     </div>
+                    <ul class="registration__items">
+                        <li class="registration-authorization__item">
+                            <button type="submit" class="registration__button button">
+                                Регистрация
+                            </button>
+                        </li>
+                        <li class="registration-authorization__item">
+                            <a class="registration-authorization__item-link" href="{{route('login')}}">
+                                Уже с нами? Войти в аккаунт.
+                            </a>
+                        </li>
+                    </ul>
                 </form>
-                <ul class="registration__items">
-                    <li class="registration-authorization__item">
-                        <button class="registration__button button">
-                            Регистрация
-                        </button>
-                    </li>
-                    <li class="registration-authorization__item">
-                        <a class="registration-authorization__item-link" href="authorization.html">
-                            Уже с нами? Войти в аккаунт.
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

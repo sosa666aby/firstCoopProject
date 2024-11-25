@@ -16,7 +16,7 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a class="logo" href="index.html"> Talkio. </a>
+            <a class="logo" href="{{route('index')}}"> Talkio. </a>
         </div>
     </div>
 </header>
@@ -25,26 +25,27 @@
         <div class="authorization__wrapper wrapper">
             <div class="authorization__inner">
                 <h1 class="authorization__title title">Вход в аккаунт.</h1>
-                <form class="authorization__form form" action="">
+                <form class="authorization__form form" action="{{route('login.store')}}" method="POST">
                     <div class="authorization__input-box input-box">
                         <input class="authorization__form-input" type="text" placeholder="Адрес электронной почты." />
                     </div>
                     <div class="authorization__input-box input-box">
                         <input class="authorization__form-input" type="password" placeholder="Пароль."/>
                     </div>
+                    <ul class="authorization__items">
+                        <li class="registration-authorization__item">
+                            <button type="submit" class="authorization__button button">
+                                Войти
+                            </button>
+                        </li>
+                        <li class="registration-authorization__item">
+                            <a class="registration-authorization__item-link" href="{{route('register')}}">
+                                Нет аккаунта? Регистрация.
+                            </a>
+                        </li>
+                    </ul>
                 </form>
-                <ul class="authorization__items">
-                    <li class="registration-authorization__item">
-                        <button class="authorization__button button">
-                            Войти
-                        </button>
-                    </li>
-                    <li class="registration-authorization__item">
-                        <a class="registration-authorization__item-link" href="registration.html">
-                            Нет аккаунта? Регистрация.
-                        </a>
-                    </li>
-                </ul>
+
             </div>
         </div>
     </div>
