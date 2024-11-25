@@ -1,16 +1,16 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 ul[class],
 ol[class] {
-  padding: 0;
+    padding: 0;
 }
 
 body,
@@ -29,150 +29,179 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul[class] {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  pointer-events: none;
-  user-select: none;
+    max-width: 100%;
+    display: block;
+    pointer-events: none;
+    user-select: none;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 body {
-  min-height: 100vh;
-  font-family: "Montserrat";
+    min-height: 100vh;
+    font-family: "Jost";
 }
 
 .container {
-  max-width: 1070px;
-  padding: 0 10px;
-  margin: 0 auto;
+    max-width: 1070px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 93px;
+}
+
+.wrapper {
+    position: absolute;
+    margin-top: 135px;
+    border-radius: 33px;
+    box-shadow: 3px 11px 12px #00000030;
+    margin-bottom: 80px;
+}
+
+.button {
+    padding: 12px 45px;
+    font-size: 30px;
+    background: #2e2e2e;
+    border-radius: 18px;
+    color: #fff;
 }
 
 .header {
-  position: fixed;
-  width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0 58px;
-  font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 58px;
+    font-weight: 500;
 }
 
 .logo {
-  font-size: 48px;
-  color: #2e2e2e;
+    font-size: 48px;
+    color: #2e2e2e;
 }
 
 .authorization {
-  padding: 5px 12px;
-  border: 1px solid #3f3f3f;
-  border-radius: 18px;
-  font-size: 20px;
-  color: #2e2e2e;
+    padding: 5px 12px;
+    border: 1px solid #3f3f3f;
+    border-radius: 18px;
+    font-size: 20px;
+    color: #2e2e2e;
 }
 
 .top {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
-.top__wrapper {
-  position: absolute;
-  margin-top: 135px;
-  border-radius: 33px;
-  box-shadow: 3px 5px 5px black;
-  margin-bottom: 80px;
-}
+/* .top__wrapper {
+
+} */
 
 .top__heading {
-  padding: 25px 45px 75px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    padding: 25px 45px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .top__heading-title {
-  max-width: 680px;
-  font-weight: 700;
-  font-size: 76px;
-  line-height: 93px;
+    max-width: 550px;
 }
 
 .top__heading-text {
-  font-weight: 500;
-  font-size: 27px;
-  max-width: 680px;
-  line-height: 41px;
+    font-weight: 500;
+    font-size: 27px;
+    max-width: 680px;
+    line-height: 46px;
 }
 
 .top__heading-bottom {
-  padding: 12px 0;
+    padding: 12px 0;
 }
 
 .top__heading-button {
-  padding: 12px 45px;
-  font-size: 30px;
-  font-weight: 450;
-  background: #2e2e2e;
-  border-radius: 18px;
-  color: #fff;
+    font-weight: 500;
+    line-height: 52.02px;
 }
 
 .ringForText,
 .ringLeft,
 .topImages {
-  position: absolute;
+    position: absolute;
 }
 
 .ringLeft {
-  left: -69px;
-  bottom: -29px;
+    left: -69px;
+    bottom: 0px;
+    overflow: hidden;
+    background: url(../images/ringLeft.svg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 428px;
+    height: 320px;
+    background-position: center center;
 }
 
 .ringForText {
-  right: 222px;
-  top: 392px;
+    right: 232px;
+    top: 392px;
 }
 
 .topImages {
-  right: 208px;
-  top: 167px;
+    right: 218px;
+    top: 167px;
 }
 
 .top__text--rotate {
-  position: absolute;
-  right: 322px;
-  top: 490px;
-  transform: rotate(31deg);
-  font-size: 96px;
-  color: #fff;
-  -webkit-text-stroke:1px #2E2E2E;
+    position: absolute;
+    font-weight: 500;
+    right: 355px;
+    top: 523px;
+    transform: rotate(31deg);
+    font-size: 96px;
+    color: #fff;
+    -webkit-text-stroke:1px #2E2E2E;
 }
 
 .bottom {
-  height: 73px;
-  background: #2e2e2e;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+    height: 73px;
+    background: #2e2e2e;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.bottom__text {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 24px 108px 14px 0;
+    color: #7B7B7B;
 }
