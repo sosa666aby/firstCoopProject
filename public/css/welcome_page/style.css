@@ -272,3 +272,11 @@ input[type='password'] {
     color: #2E2E2ECC;
     border-bottom: 2px solid #2E2E2ECC;
 }
+/*auth*/
+
+.authorization__inner {
+    padding: 25px 45px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
