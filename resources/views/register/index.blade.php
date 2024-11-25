@@ -28,6 +28,7 @@
                     Регистрация аккаунта.
                 </h1>
                 <form class="registration__form form" action="{{route('register.store')}}" method="POST">
+                    @csrf
                     <div class="registration__input-box input-box">
                         <input
                             class="registration__form-input"

@@ -26,6 +26,7 @@
             <div class="authorization__inner">
                 <h1 class="authorization__title title">Вход в аккаунт.</h1>
                 <form class="authorization__form form" action="{{route('login.store')}}" method="POST">
+                    @csrf
                     <div class="authorization__input-box input-box">
                         <input class="authorization__form-input" type="text" placeholder="Адрес электронной почты." />
                     </div>
