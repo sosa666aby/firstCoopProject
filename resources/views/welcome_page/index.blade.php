@@ -56,10 +56,10 @@
     <div class="bottom">
         <p class="bottom__text">2024 Talkio</p>
     </div>
-    <img class="ringForText" src="images/ringForText.svg" alt="" />
+    <img class="ringForText" src="{{asset('images/ringForText.svg')}}" alt="" />
     <!-- <img class="ringLeft" src="images/ringLeft.svg" alt=""> -->
     <div class="ringLeft"></div>
-    <img class="topImages" src="images/topImages.svg" alt="" />
+    <img class="topImages" src="{{asset('images/topImages.svg')}}" alt="" />
 </section>
 </body>
 </html>
