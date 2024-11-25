@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -10,6 +11,14 @@ class LoginController extends Controller
         return view('auth.index');
     }
     public function store(Request $request){
-        dd($request->all());
+        $request->validate([
+                'email'=>['required','string','email'],
+                'password'=>['required','string'],
+            ]
+        );
+        if(Auth::attempt($request->only('email','password'))){
+            return redirect()->route('index');
+        }
+        return 'fail';
     }
 }

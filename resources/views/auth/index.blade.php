@@ -28,10 +28,10 @@
                 <form class="authorization__form form" action="{{route('login.store')}}" method="POST">
                     @csrf
                     <div class="authorization__input-box input-box">
-                        <input class="authorization__form-input" type="text" placeholder="Адрес электронной почты." />
+                        <input class="authorization__form-input" name="email" type="text" placeholder="Адрес электронной почты." />
                     </div>
                     <div class="authorization__input-box input-box">
-                        <input class="authorization__form-input" type="password" placeholder="Пароль."/>
+                        <input class="authorization__form-input" name="password" type="password" placeholder="Пароль."/>
                     </div>
                     <ul class="authorization__items">
                         <li class="registration-authorization__item">

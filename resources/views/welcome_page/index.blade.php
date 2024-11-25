@@ -14,6 +14,9 @@
 </head>
 <body>
 <header class="header">
+{{--    @if(Auth::check())--}}
+{{--        {{Auth::user()->name}}--}}
+{{--    @endif--}}
     <div class="container">
         <div class="header__inner">
             <a class="logo" href="{{route('index')}}"> Talkio. </a>

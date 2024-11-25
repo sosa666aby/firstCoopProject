@@ -27,6 +27,11 @@
                 <h1 class="registration__title title">
                     Регистрация аккаунта.
                 </h1>
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
                 <form class="registration__form form" action="{{route('register.store')}}" method="POST">
                     @csrf
                     <div class="registration__input-box input-box">
