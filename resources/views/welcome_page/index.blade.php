@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
     />
-    <link type="text/css" rel="stylesheet" href="{{asset('css/welcome_page/style.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
 </head>
 <body>
 <header class="header">
