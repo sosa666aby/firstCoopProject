@@ -34,13 +34,14 @@
                             class="registration__form-input"
                             type="text"
                             placeholder="Адрес электронной почты."
+                            name="email"
                         />
                     </div>
                     <div class="registration__input-box input-box">
-                        <input class="registration__form-input" type="text" placeholder="Логин." />
+                        <input class="registration__form-input" type="text" placeholder="Логин." name="name" />
                     </div>
                     <div class="registration__input-box input-box">
-                        <input class="registration__form-input" type="password" placeholder="Пароль."/>
+                        <input class="registration__form-input" type="password" placeholder="Пароль." name="password"/>
                     </div>
                     <ul class="registration__items">
                         <li class="registration-authorization__item">
