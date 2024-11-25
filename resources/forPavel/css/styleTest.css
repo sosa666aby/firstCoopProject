@@ -62,3 +62,23 @@ html {
     padding: 0 10px;
     margin: 0 auto;
 }
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    font-size: 48px;
+    color: #3F3F3F;
+    line-height: 69.34px;
+    font-weight: 500;
+}
+.header__logo-link {
+    color: #3F3F3F;
+
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
