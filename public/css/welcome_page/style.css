@@ -186,7 +186,8 @@ body {
     transform: rotate(31deg);
     font-size: 96px;
     color: #fff;
-    -webkit-text-stroke:1px #2E2E2E;
+    -webkit-text-stroke: 1px #2E2E2E;
+    line-height: 140px;
 }
 
 .bottom {
