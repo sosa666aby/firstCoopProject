@@ -56,7 +56,7 @@ select {
 
 body {
   min-height: 100vh;
-  font-family: "Montserrat";
+  font-family: "Jost";
 }
 
 .container {
@@ -65,9 +65,32 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 93px;
+}
+
+.wrapper {
+  position: absolute;
+  margin-top: 135px;
+  border-radius: 33px;
+  box-shadow: 3px 11px 12px #00000030;
+  margin-bottom: 80px;
+}
+
+.button {
+  padding: 12px 45px;
+  font-size: 30px;
+  background: #2e2e2e;
+  border-radius: 18px;
+  color: #fff;
+}
+
 .header {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header__inner {
@@ -96,13 +119,9 @@ body {
   min-height: 100vh;
 }
 
-.top__wrapper {
-  position: absolute;
-  margin-top: 135px;
-  border-radius: 33px;
-  box-shadow: 3px 5px 5px black;
-  margin-bottom: 80px;
-}
+/* .top__wrapper {
+
+} */
 
 .top__heading {
   padding: 25px 45px 75px;
@@ -112,17 +131,14 @@ body {
 }
 
 .top__heading-title {
-  max-width: 680px;
-  font-weight: 700;
-  font-size: 76px;
-  line-height: 93px;
+  max-width: 550px;
 }
 
 .top__heading-text {
   font-weight: 500;
   font-size: 27px;
   max-width: 680px;
-  line-height: 41px;
+  line-height: 46px;
 }
 
 .top__heading-bottom {
@@ -130,12 +146,8 @@ body {
 }
 
 .top__heading-button {
-  padding: 12px 45px;
-  font-size: 30px;
-  font-weight: 450;
-  background: #2e2e2e;
-  border-radius: 18px;
-  color: #fff;
+  font-weight: 500;
+  line-height: 52.02px;
 }
 
 .ringForText,
@@ -146,23 +158,31 @@ body {
 
 .ringLeft {
   left: -69px;
-  bottom: -29px;
+  bottom: 0px;
+  overflow: hidden;
+  background: url(../images/ringLeft.svg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 428px;
+  height: 320px;
+  background-position: center center;
 }
 
 .ringForText {
-  right: 222px;
+  right: 232px;
   top: 392px;
 }
 
 .topImages {
-  right: 208px;
+  right: 218px;
   top: 167px;
 }
 
 .top__text--rotate {
   position: absolute;
-  right: 322px;
-  top: 490px;
+  font-weight: 500;
+  right: 355px;
+  top: 523px;
   transform: rotate(31deg);
   font-size: 96px;
   color: #fff;
@@ -175,4 +195,13 @@ body {
   position: absolute;
   width: 100%;
   bottom: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.bottom__text {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 24px 108px 14px 0;
+  color: #7B7B7B;
 }
