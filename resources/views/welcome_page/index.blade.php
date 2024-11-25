@@ -17,7 +17,7 @@
     <div class="container">
         <div class="header__inner">
             <a class="logo" href="{{route('index')}}"> Talkio. </a>
-            <a class="authorization" href="#"> Вход/Регистрация </a>
+            <a class="authorization" href="{{route('register')}}"> Вход/Регистрация </a>
         </div>
     </div>
 </header>

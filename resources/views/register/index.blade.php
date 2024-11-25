@@ -28,6 +28,7 @@
                     Регистрация аккаунта.
                 </h1>
                 <form class="registration__form" action="">
+                    @csrf
                     <div class="registration__input-box">
                         <input
                             class="registration__form-input"
