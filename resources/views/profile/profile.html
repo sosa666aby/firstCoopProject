@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="{{route('index')}}"> Talkio. </a>
+                    <a class="user-profile" href="#">
+                        <img
+                            class="user-profile-img"
+                            src="../../../public/images/userProfile.svg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="user">
+            <div class="container">
+                <div class="user__inner">
+                    <div class="user__button">
+                        <a class="user__button-link button" href="#">Назад</a>
+                    </div>
+                    <div class="user__profile wrapper">
+                        <h2 class="user__profile-title title">
+                            Личные данные.
+                        </h2>
+                        <div class="user__data">
+                          <!-- повесь обработчик событий на user__photo -->
+                            <div class="user__photo square">
+                                <img
+                                    src="../../../public/images/userProfileDownload.svg"
+                                    alt="userPhoto"
+                                />
+                                <p class="user__text">Загрузить фото</p>
+                            </div>
+                            <form class="user__form" action="">
+                              <ul class="user__items">
+                                <li class="user__item">
+                                  <input class="user__item-input user__text square" type="text" placeholder="Имя">
+                                </li>
+                                <li class="user__item">
+                                  <input class="user__item-input user__text square" type="text" placeholder="Имя пользователя">
+                                </li>
+                                <li class="user__item">
+                                  <textarea class="user__item-input user__text square" rows="5" cols="33" placeholder="О себе"></textarea>
+                                </li>
+                            </ul>
+                            </form>
+                        </div>
+                        <h2 class="user__security-title title">Безопасность.</h2>
+                        <div class="user__security">
+                          <form class="user__securit-form" action="">
+                            <ul class="user__items">
+                              <li class="user__item">
+                                <input class="user__item-input user__text square" type="text" placeholder="Имя">
+                              </li>
+                              <li class="user__item">
+                                <input class="user__item-input user__text square" type="text" placeholder="Имя пользователя">
+                              </li>
+                              <li class="user__item">
+                                <input class="user__item-input user__text square" type="text" placeholder="О себе">
+                              </li>
+                              <li class="user__item">
+                                <input class="user__item-input user__text square" type="text" placeholder="О себе">
+                              </li>
+                              <li class="user__item">
+                                <button class="user__item-button button">Сменить пароль</button>
+                              </li>
+                              <li class="user__item" style="display: none;"></li>
+                              </ul>
+                          </form>
+                        </div>
+                        <div class="user__exit">
+                          <button class="user__exit-button button">
+                            <img class="user" src=../../../public/images/"" alt="">
+                            Выйти
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+              <p class="bottom__text">2024 Talkio</p>
+            </div>
+        </section>
+    </body>
+</html>
