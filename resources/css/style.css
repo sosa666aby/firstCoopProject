@@ -108,6 +108,11 @@ body {
   font-weight: 500;
   border: none;
   cursor: pointer;
+  transition: 0.3;
+}
+
+.button:hover {
+  transform: scale(1.02, 1.02);
 }
 
 .form {
