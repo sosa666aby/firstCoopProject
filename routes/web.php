@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\TestMiddleware;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
@@ -10,13 +11,15 @@ use App\Http\Controllers\LoginController;
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
 //REGISTER
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::group(['middleware'=>[]],function(){
+    Route::get('/register', [RegisterController::class, 'index'])->name('register');
+    Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+}
+);
 
-Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 //LOGIN
 Route::get('/login', [LoginController::class, 'index'])->name('login');
-
 Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 
 
