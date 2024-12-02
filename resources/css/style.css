@@ -108,7 +108,7 @@ body {
   font-weight: 500;
   border: none;
   cursor: pointer;
-  transition: 0.3;
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -390,4 +390,143 @@ max-width: 550px;
   font-size: 20px;
   line-height: 35px;
   padding: 8px 25px;
+}
+
+/* cabinet */
+
+.cabinet {
+  color: #3F3F3F ;
+}
+
+.cabinet__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.cabinet__user-left {
+  display: flex;
+}
+
+.cabinet__user-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.cabinet__user-subtitle {
+  font-size: 24px;
+}
+
+.cabinet__user-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cabinet__user-image{
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.cabinet__user-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cabinet__user-info{
+  display: flex;
+  gap: 20px;
+}
+
+.cabinet__user-data {
+  display: flex;
+}
+
+.cabinet__user-data p {
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.cabinet__user-button {
+  padding: 9px 128px;
+  font-size: 24px;
+}
+
+.user__post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.user__post-button {
+  padding: 9px 76px;
+}
+
+.user__post-wrapper {
+  min-height: 495px;
+  padding: 25px 40px;
+}
+
+.user__post {
+  display: flex;
+  max-height: 123px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.user__post-name {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+  max-width: 345px;
+}
+
+.user__post-list {
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.user__post-title {
+  font-size: 26px;
+  line-height: 46px;
+}
+
+.user__post-description {
+  font-size: 21px;
+  line-height: 35px;
+}
+
+.user__post-profit {
+  display: flex;
+  font-size: 20px;
+  line-height: 46px;
+  gap: 30px;
+}
+
+.user__post-views, .user__post-likes, .user__post-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-button {
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.user__post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.user__post-date {
+  font-weight: 500;
+  font-size: 20px;
 }
