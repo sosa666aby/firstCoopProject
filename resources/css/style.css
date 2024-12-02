@@ -468,8 +468,8 @@ max-width: 550px;
 }
 
 .user__post-wrapper {
-  min-height: 495px;
-  padding: 25px 40px;
+  min-height: 444px;
+  padding: 25px 40px 0;
 }
 
 .user__post {
